@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>TECNOLOTGIA - Carrito</title>
+    <link rel="icon" type="image/png" href="../Imagenes/Icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Carrito.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="carrito-page">
+    <div class="carrito-bg" aria-hidden="true"></div>
+    <header>
+    </header>
+    <div class="container">
+        <a href="index.html" id="icon-wrap">
+            <img id="icon" src="../Imagenes/iconbg.png" alt="TECNOLOTGIA">
+        </a>
+        <div class="search-bar">
+            <input type="search" id="carrito-search" placeholder="Buscar en el carrito...">
+        </div>
+        <div class="right-icons">
+            <a href="Carrito.html" class="cart" aria-label="Carrito de compras">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+            </a>
+            <button class="hamburger-menu" aria-label="Menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+
+    <aside class="side-menu" aria-hidden="true">
+        <div class="side-menu-header">
+            <span class="side-menu-title">TECNOLOTGIA</span>
+            <span class="side-menu-subtitle">Menus</span>
+        </div>
+        <nav class="side-menu-grid">
+            <a href="index.html" class="side-menu-item">Inicio</a>
+            <a href="../Catalogo (2)/Catalogo/index.html" class="side-menu-item">Catálogo</a>
+            <a href="../Contacto/index-contacto.html/index-contacto.html" class="side-menu-item">Contacto</a>
+            <button class="side-menu-item side-menu-item-secondary" type="button">Ayuda</button>
+        </nav>
+    </aside>
+
+    <main class="carrito-main">
+        <h1 class="carrito-titulo">Tu carrito</h1>
+        <div class="cart-items-grid" id="cart-items-grid">
+            <!-- Los items se cargan por JS desde localStorage -->
+        </div>
+        <p class="cart-empty" id="cart-empty" hidden>No hay productos en el carrito.</p>
+        <div class="cart-footer" id="cart-footer" hidden>
+            <button type="button" class="btn-confirmar-compra" id="btn-confirmar-compra">Confirmar compra</button>
+        </div>
+    </main>
+
+    <div class="popup-compra" id="popup-compra" role="dialog" aria-modal="true" aria-labelledby="popup-titulo" hidden>
+        <div class="popup-compra-content">
+            <h2 id="popup-titulo">Compra exitosa</h2>
+            <p>No se aceptan devoluciones.</p>
+            <button type="button" class="popup-compra-cerrar" id="popup-cerrar">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="carrito.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECNOLOTGIA - Contacto</title>
+    <link rel="stylesheet" href="../../Home/styles.css">
+    <link rel="stylesheet" href="../styles-contacto.css/styles-contacto.css">
+    <link rel="icon" href="../imagenes-contacto/imagenes-contacto/Tecnolotgia.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header></header>
+    <div class="container">
+        <a href="../../Home/index.html"><img id="icon" src="../../Imagenes/iconbg.png" alt="TECNOLOTGIA"></a>
+        <div class="right-icons">
+            <a href="../../Home/Carrito.html" class="cart" aria-label="Carrito de compras">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+            </a>
+            <button class="hamburger-menu" aria-label="Menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+
+    <aside class="side-menu" aria-hidden="true">
+        <div class="side-menu-header">
+            <span class="side-menu-title">TECNOLOTGIA</span>
+            <span class="side-menu-subtitle">Menus</span>
+        </div>
+        <nav class="side-menu-grid">
+            <a href="../../Home/index.html" class="side-menu-item">Inicio</a>
+            <a href="../../Catalogo (2)/Catalogo/index.html" class="side-menu-item">Catálogo</a>
+            <a href="index-contacto.html" class="side-menu-item">Contacto</a>
+            <button class="side-menu-item side-menu-item-secondary" type="button">Ayuda</button>
+        </nav>
+    </aside>
+
+    <main class="contacto-main">
+        <div class="contact-container">
+            <h1 class="contacto-titulo">TECNOLOTGIA: Contacto</h1>
+
+            <div class="layout-contacto">
+                <div class="columna-izquierda">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn-enviar">Enviar</button>
+                    </form>
+                    <div class="info-contacto">
+                        <p><strong>Correo:</strong> technolotgia.store@gmail.com</p>
+                        <p><img src="../imagenes-contacto/imagenes-contacto/icono-whatsapp.png" width="20" alt=""> +506 1234 5678</p>
+                        <p><img src="../imagenes-contacto/imagenes-contacto/icono-instagram.png" width="20" alt=""> @Technolotgia_Store1</p>
+                        <p><img src="../imagenes-contacto/imagenes-contacto/icono-facebook.png" width="20" alt=""> TechnolotgiaStore</p>
+                    </div>
+                </div>
+                <section class="map">
+                    <h2>Ubicación:</h2>
+                    <iframe id="map-container" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d609.4644118368539!2d-84.15181609498075!3d9.998444826222478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2scr!4v1771532510194!5m2!1ses-419!2scr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h1 class="footer-title">TECNOLOTGIA</h1>
+            <h2 class="footer-subtitle">Sobre nosotros</h2>
+            <div class="footer-content-text">
+                <p>TECNOLOTGIA es una empresa que se dedica a la venta de llaves digitales para juegos.</p>
+            </div>
+            <h2 class="footer-subtitle">Contacto</h2>
+            <div class="footer-content-text">
+                <p>Emails: Lourdes.chinchilla.roman@ctpcit.ed.cr</p>
+                <p>Emails: Alexander.zambrana.rodriguez@ctpcit.ed.cr</p>
+                <p>Emails: Fabian.garcia.espinoza@ctpcit.ed.cr</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var h = document.querySelector('.hamburger-menu');
+            var s = document.querySelector('.side-menu');
+            if (!h || !s) return;
+            function setOpen(o) {
+                h.classList.toggle('is-open', o);
+                s.classList.toggle('is-open', o);
+                h.setAttribute('aria-expanded', o);
+                s.setAttribute('aria-hidden', !o);
+            }
+            h.addEventListener('click', function() { setOpen(!h.classList.contains('is-open')); });
+            document.addEventListener('click', function(e) {
+                if (!s.classList.contains('is-open')) return;
+                if (s.contains(e.target) || h.contains(e.target)) return;
+                setOpen(false);
+            });
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && s.classList.contains('is-open')) setOpen(false);
+            });
+        });
+    </script>
+</body>
+</html>

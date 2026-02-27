@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECNOLOTGIA - Catálogo</title>
+  <link rel="icon" type="image/png" href="../../Imagenes/Icon.png">
+  <link rel="stylesheet" href="../../Home/styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header></header>
+  <div class="container">
+    <a href="../../Home/index.html"><img id="icon" src="../../Imagenes/iconbg.png" alt="TECNOLOTGIA"></a>
+    <div class="search-bar">
+      <input type="search" placeholder="Buscar productos...">
+    </div>
+    <div class="right-icons">
+      <a href="../../Home/Carrito.html" class="cart" aria-label="Carrito de compras">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+      </a>
+      <button class="hamburger-menu" aria-label="Menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+
+  <aside class="side-menu" aria-hidden="true">
+    <div class="side-menu-header">
+      <span class="side-menu-title">TECNOLOTGIA</span>
+      <span class="side-menu-subtitle">Menus</span>
+    </div>
+    <nav class="side-menu-grid">
+      <a href="../../Home/index.html" class="side-menu-item">Inicio</a>
+      <a href="index.html" class="side-menu-item">Catálogo</a>
+      <a href="../../Contacto/index-contacto.html/index-contacto.html" class="side-menu-item">Contacto</a>
+      <button class="side-menu-item side-menu-item-secondary" type="button">Ayuda</button>
+    </nav>
+  </aside>
+
+  <main>
+  <div class="catalog-content">
+    <div class="filters">
+      <h2>Filters</h2>
+      
+      <div class="filter-section">
+        <h3>Clasificacion</h3>
+        <div class="classification-tags">
+          <button class="tag">E</button>
+          <button class="tag">+10</button>
+          <button class="tag">T</button>
+          <button class="tag">L</button>
+          <button class="tag">M</button>
+          <button class="tag">AO</button>
+        </div>
+      </div>
+      
+      <div class="filter-section">
+        <h3>Availability </h3>
+        <div class="checkbox-item">
+          <input type="checkbox" id="available">
+          <label for="available">Availability (450)</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="outofstock">
+          <label for="outofstock">Out Of Stock (18)</label>
+        </div>
+      </div>
+      
+      <div class="filter-link">
+        <span>Categoria</span>
+        <span>›</span>
+      </div>
+      <div class="filter-link">
+        <span>Genero</span>
+        <span>›</span>
+      </div>
+      <div class="filter-link">
+        <span>Rango de precio</span>
+        <span>›</span>
+      </div>
+      <div class="filter-link">
+        <span>Colecciones</span>
+        <span>›</span>
+      </div>
+      <div class="filter-link">
+        <span>Plataformas</span>
+        <span>›</span>
+      </div>
+      <div class="filter-link">
+        <span>Ratings</span>
+        <span>›</span>
+      </div>
+    </div>
+
+    <div class="products">
+      <div class="products-grid">
+        <div class="product-card">
+          <a href="marioparty.html">
+            <img src="https://rodelag.com/cdn/shop/files/PS0007541_2_1200x1200_crop_center.jpg?v=1723818776" alt="Super Mario Party" class="product-image">
+          </a>
+          <div class="product-title">Super Mario Party</div>
+          <div class="product-price">$54</div>
+        </div>
+        
+        <div class="product-card">
+          <a href="mortalkombat11.html">
+            <img src="https://media.comunidadxbox.com/wp-content/uploads/2019/04/Mortal-Kombat-11-Comunidad-Xbox-9.jpg" alt="Mortal Kombat 11" class="product-image">
+          </a>
+          <div class="product-title">Mortal Kombat 11</div>
+          <div class="product-price">$20</div>
+        </div>
+        
+        <div class="product-card">
+          <a href="forzahorizon.html">
+            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202502/1900/631436cfbc1d64659c778e3783f29fafad6022145e0ffec8.jpg" alt="Forza Horizon" class="product-image">
+          </a>
+          <div class="product-title">Forza horizon</div>
+          <div class="product-price">$60</div>
+        </div>
+        
+        <div class="product-card">
+          <a href="cultofthelamb.html">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Cult_of_the_Lamb_Key_Art.png/250px-Cult_of_the_Lamb_Key_Art.png" alt="Cult of the Lamb" class="product-image">
+          </a>
+          <div class="product-title">Cult of the lamb</div>
+          <div class="product-price">$5</div>
+        </div>
+        
+        <div class="product-card">
+          <a href="minecraft.html">
+            <img src="https://assets.nintendo.eu/image/upload/f_auto,c_limit,w_992,q_auto:low/MNS/NOE/70010000000963/SQ_NSwitch_Minecraft" alt="Minecraft" class="product-image">
+          </a>
+          <div class="product-title">Minecraft</div>
+          <div class="product-price">$30</div>
+        </div>
+        
+        <div class="product-card">
+          <a href="fifa23.html">
+            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202507/1617/2e757ffb0a6bb4b91af84db64e0183d725e56e5354f45eba.png" alt="FIFA 23" class="product-image">
+          </a>
+          <div class="product-title">Fifa 23</div>
+          <div class="product-price">$100</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <h1 class="footer-title">TECNOLOTGIA</h1>
+      <h2 class="footer-subtitle">Sobre nosotros</h2>
+      <div class="footer-content-text">
+        <p>TECNOLOTGIA es una empresa que se dedica a la venta de llaves digitales para juegos.</p>
+      </div>
+      <h2 class="footer-subtitle">Contacto</h2>
+      <div class="footer-content-text">
+        <p>Emails: Lourdes.chinchilla.roman@ctpcit.ed.cr</p>
+        <p>Emails: Alexander.zambrana.rodriguez@ctpcit.ed.cr</p>
+        <p>Emails: Fabian.garcia.espinoza@ctpcit.ed.cr</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var h = document.querySelector('.hamburger-menu');
+      var s = document.querySelector('.side-menu');
+      if (!h || !s) return;
+      function setOpen(o) {
+        h.classList.toggle('is-open', o);
+        s.classList.toggle('is-open', o);
+        h.setAttribute('aria-expanded', o);
+        s.setAttribute('aria-hidden', !o);
+      }
+      h.addEventListener('click', function() { setOpen(!h.classList.contains('is-open')); });
+      document.addEventListener('click', function(e) {
+        if (!s.classList.contains('is-open')) return;
+        if (s.contains(e.target) || h.contains(e.target)) return;
+        setOpen(false);
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && s.classList.contains('is-open')) setOpen(false);
+      });
+    });
+  </script>
+</body>
+</html>
